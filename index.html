@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kirri</title>
+
+    <!-- ✅ Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ✅ Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+    <!-- ✅ Custom CSS (AFTER Bootstrap) -->
+    <link rel="stylesheet" href="CSS/animation.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#NavSpy">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="NavSpy">
+            <div class="container p-2 ">
+                <a class="navbar-brand fw-bold fs-3" href="#home">Kerri</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-lg-0 navbar-nav-scroll fs-5" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#client">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home-section " id="home">
+            <div class="container">
+                <div
+                    class="home-content vh-100 d-flex justify-content-center align-items-center flex-column text-center text-white">
+                    <span class="fs-3 ">Welcome</span>
+                    <h1 class="m-4">hello</h1>
+                    <p width="max-width:500px">It is a long established fact that a reader will be of a page when
+                        established fact looking <br> at
+                        its layout.</p>
+                    <a href="pdf/frontend.pdf" target="_blank" rel="noopener noreferrer"
+                        class="btn rounded-pill btn-lg px-5 py-3 mt-3">
+                        Download Cv
+                    </a>
+
+
+                </div>
+        </section>
+    </main>
+    <script src="JS/bootstrap.bundle.js"></script>
+</body>
+
+</html>
