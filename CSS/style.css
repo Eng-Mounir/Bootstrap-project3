@@ -22,7 +22,9 @@ ul{
     list-style-type: none;
     padding-left: 0;
 }
-
+img{
+    width: 100%;
+}
 .nav-link{
     color: white;
 }
@@ -90,4 +92,28 @@ ul{
     background-color: var(--main-color);
     border-color: var(--main-color);
     transform: scale(1.1);
+}
+
+
+/*start portfolio section*/
+.portfolio-section .card-item{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-section .card-item img{
+    transition: all ease-in 1s 1s;
+}
+.portfolio-section .card-item .layer{
+    width: 100%;    
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: all ease-in 1s;
+    position: absolute;
+    inset: 0;
+    transform: translatey(100%);
+}
+.portfolio-section .card-item:hover .layer{
+    transform: translatey(0%);
+}
+.portfolio-section .card-item:hover img{
+    transform:scale(1.3);
 }
