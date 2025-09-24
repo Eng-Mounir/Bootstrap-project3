@@ -25,6 +25,9 @@ ul{
 img{
     width: 100%;
 }
+p {
+    color: #6c757d;
+}
 .nav-link{
     color: white;
 }
@@ -75,9 +78,7 @@ img{
     color: var(--main-color);
     font-weight: 700;
 }
-.about-section .right-content p {
-    color: #6c757d;;
-}
+
 .socail-icons a {
     transition: all 0.3s ease;
     display: inline-flex;
