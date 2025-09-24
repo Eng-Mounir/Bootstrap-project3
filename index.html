@@ -12,7 +12,6 @@
 
     <!-- ✅ Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
-
     <!-- ✅ Custom CSS (AFTER Bootstrap) -->
     <link rel="stylesheet" href="CSS/animation.css">
     <link rel="stylesheet" href="CSS/style.css">
@@ -57,7 +56,9 @@
                 <div
                     class="home-content vh-100 d-flex justify-content-center align-items-center flex-column text-center text-white">
                     <span class="fs-3 ">Welcome</span>
-                    <h1 class="m-4">hello</h1>
+                    <h1 class="m-4">
+                        <span id="element"></span>
+                    </h1>
                     <p width="max-width:500px">It is a long established fact that a reader will be of a page when
                         established fact looking <br> at
                         its layout.</p>
@@ -65,11 +66,72 @@
                         class="btn rounded-pill btn-lg px-5 py-3 mt-3">
                         Download Cv
                     </a>
-
+                    <a href="#about" class="scroll-down-btn rounded-5 text-white position-absolute"
+                        style="width:50px; height:50px;">
+                        <i class="fa-solid fa-angles-down fa-fade"></i>
+                    </a>
 
                 </div>
         </section>
+
+
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="row py-5 align-items-center">
+                    <div class="col-6">
+                        <div class="left-content border p-1">
+                            <img src="images/about.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="right-content">
+                            <h2><b>About</b> Me</h2>
+                            <h3>Hello! <span>I'M Kerri Deo.</span></h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of
+                                a
+                                page when looking at its layout.</p>
+                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                letters,
+                                as opposed to using 'Content here, content here', making it look like readable English.
+                            </p>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look
+                                even slightly believable.</p>
+                            <div class="socail-icons">
+                                <a href="" class="rounded-circle border border-black p-2">
+                                    <i class="fa-brands fa-facebook rounded-circle fs-4"></i>
+                                </a>
+                                <a href="" class="rounded-circle border border-black p-2">
+                                    <i class="fa-brands fa-twitter rounded-circle fs-4"></i>
+                                </a>
+                                <a href="" class="rounded-circle border border-black p-2">
+                                    <i class="fa-brands fa-youtube rounded-circle fs-4"></i>
+                                </a>
+                                <a href="" class="rounded-circle border border-black p-2">
+                                    <i class="fa-brands fa-linkedin rounded-circle fs-4"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+        strings: ['I am Developer', 'I am Designer', 'I am Kirri'],
+        typeSpeed: 150,     // typing speed
+        backSpeed: 100,     // backspacing speed
+        loop: true         // repeats indefinitely
+    });
+</script>
+
     <script src="JS/bootstrap.bundle.js"></script>
 </body>
 
